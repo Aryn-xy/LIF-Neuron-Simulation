@@ -13,7 +13,7 @@ A simulated neuron model that integrates incoming current (input), gradually los
 ### Equation
 
 ```
-dV = (-V + I) * (dt / tau)
+dV = (-V + I)*(dt/tau)
 ```
 ### Notations
 
