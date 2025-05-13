@@ -13,7 +13,7 @@ V_th = 1              # threshold potential (mV)
 V_reset = 0          # reset potential after spike (mV)
 I = 1.5              # Constant input current (arbitrary units)
 
-#Initialize membrane potential array
+#initialize membrane potential array
 V = np.zeros(len(time))
 
 # track spike times
@@ -21,11 +21,11 @@ spike_times = []
 
 #looping over each time step
 for t in range(1, len(time)):
-    # Calculate change in V using LIF formula
+    # calculate change in V using LIF formula
     dV = (-V[t-1] + I) * (dt / tau)
     V[t] = V[t-1] + dV
 
-    #Check for spike
+    #check for spike
     if V[t] >= V_th:
         V[t] = V_reset             # Reset voltage
         spike_times.append(time[t])  # Record spike time
@@ -41,5 +41,6 @@ plt.legend()
 plt.grid(True)
 plt.show()
 
-# Print spike times
+
+
 print("Spike times:", spike_times)
