@@ -24,6 +24,5 @@ dV = (-V + I)*(dt/tau)
 - dV : Change in membrane potential during one time step
   
 ## Sample Output
-LIF_Neuron_Simulation_plot.png
 ![LIF Neuron Simulation Plot](LIF_Neuron_Simulation_plot.png)
 
