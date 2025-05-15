@@ -1,10 +1,8 @@
 import numpy as np
 import matplotlib.pyplot as plt
-
 T = 300   #ms
 dt = 1  #time step (1 ms)
 time = np.arange(0, T + dt, dt)  #time array
-
 #neuron parameters
 tau = 10           
 V_rest = 0           
@@ -13,8 +11,7 @@ V_reset = 0
 I = 1.5             
 
 V = np.zeros(len(time))
-
-  # track spike times
+# track spike times
 spike_times = []
 
 #looping over each time step
