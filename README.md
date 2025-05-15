@@ -2,8 +2,6 @@
 
 A simulated neuron model that integrates incoming current (input), gradually loses voltage due to leakiness, and generates a spike when the membrane potential crosses a threshold.
 
-## Works
-
 - Neuron receives an  input current
 - Membrane potential increases gradually.
 - If the threshold is crossed, it fires and resets
@@ -11,7 +9,6 @@ A simulated neuron model that integrates incoming current (input), gradually los
 - The neuron updates using the differential equation :
 
 ### Equation
-
 
 dV = (-V + I)*(dt/tau)
 
