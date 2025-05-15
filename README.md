@@ -13,7 +13,6 @@ A simulated neuron model that integrates incoming current (input), gradually los
 dV = (-V + I)*(dt/tau)
 
 ### Notations
-
 - V : Membrane potential (voltage)
 - I : Input current
 - tau : Membrane time constant (leakiness)
