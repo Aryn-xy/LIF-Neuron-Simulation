@@ -12,13 +12,18 @@ A simulated neuron model that integrates incoming current (input), gradually los
 
 ### Equation
 
-```
+
 dV = (-V + I)*(dt/tau)
-```
+
 ### Notations
 
-- `V` : Membrane potential (voltage)
-- `I` : Input current
-- `tau` : Membrane time constant (leakiness)
-- `dt` : Time step (simulation resolution)
-- `dV` : Change in membrane potential during one time step
+- V : Membrane potential (voltage)
+- I : Input current
+- tau : Membrane time constant (leakiness)
+- dt : Time step (simulation resolution)
+- dV : Change in membrane potential during one time step
+  
+## Sample Output
+LIF_Neuron_Simulation_plot.png
+![LIF Neuron Simulation Plot](LIF_Neuron_Simulation_plot.png)
+
